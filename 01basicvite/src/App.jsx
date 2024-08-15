@@ -1,9 +1,10 @@
-
+import Rude from "./Rude"
 function App() {
 
   return (
     <>
-      <h1>Hey there react using vite</h1>
+      <Rude/>
+      <p>Now i am learning react</p>
     </>
   )
 }
