@@ -25,10 +25,11 @@ function App() {
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1707075891545-c36963b873e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9uZXklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww')`,
+            backgroundImage: `url('https://cepr.org/sites/default/files/styles/og_image/public/voxeu-cover-image/AdobeStock_142481183_0.jpeg?itok=1p61MdCM')`,
         }}
-    >
+      >
         <div className="w-full">
+        <h1 className='text-center  mt-5 mb-10 text-3xl font-serif'>Currency Convertor </h1>
             <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
@@ -41,7 +42,7 @@ function App() {
                             label="From"
                             amount={amount}
                             currencyOptions={options}
-                            oncurrencychange={(amount)=> setamount(amount)}
+                            oncurrencychange={(amount)=> setFrom(amount)}
                             onAmountchange={(amount) => setamount(amount)}
                             selectCurrency={from}     
                         />
