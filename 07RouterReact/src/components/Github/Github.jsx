@@ -21,8 +21,6 @@ function Github() {
     </div>
   )
 }
-
-
 export default Github
 
 export  const  GithubLoaderInfo=async()=>{
